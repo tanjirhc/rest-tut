@@ -13,7 +13,7 @@ app.get('/posts', (req, res) => {
 })
 
 app.get('/api/contacts', (req, res) => {
-  res.send('All Contacts')
+  res.send('contacts')
 })
 
 app.post('/api/contacts', (req, res) => {
@@ -23,3 +23,9 @@ app.post('/api/contacts', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on PORT ${PORT}`);
 }) 
+
+const contacts = [
+  {name: 'HM Nayem', email: 'something@gmail.com'},
+  {name: 'Shegufta Taranjum', email: 'anothermail.com'},
+  {name: 'Salvy', email: 'salvy@gmail.com'}
+]
