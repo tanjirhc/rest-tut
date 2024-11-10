@@ -13,11 +13,11 @@ app.get('/posts', (req, res) => {
 })
 
 app.get('/api/contacts', (req, res) => {
-  res.send('contacts')
+  
 })
 
 app.post('/api/contacts', (req, res) => {
-  
+  res.send(contacts)
 })
 
 app.listen(PORT, () => {
