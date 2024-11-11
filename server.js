@@ -13,13 +13,11 @@ app.get('/posts', (req, res) => {
 })
 
 app.get('/api/contacts', (req, res) => {
-  
-})
-
-app.post('/api/contacts', (req, res) => {
   res.send(contacts)
 })
 
+
+app.post('/api/contacts') 
 app.listen(PORT, () => {
   console.log(`Server is running on PORT ${PORT}`);
 }) 
