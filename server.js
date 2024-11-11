@@ -17,7 +17,11 @@ app.get('/api/contacts', (req, res) => {
 })
 
 
-app.post('/api/contacts') 
+app.post('/api/contacts', (req, res) => {
+  res.json({
+    message: 'I am Post Method'
+  })
+}) 
 app.listen(PORT, () => {
   console.log(`Server is running on PORT ${PORT}`);
 }) 
